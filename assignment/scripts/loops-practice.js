@@ -13,13 +13,15 @@ for (let i=0; i<4; i++) {
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
-for (let i=0; i<6; i++){ // I only had to change the number i was being check with to 6.
+// I only had to change the number i was being check with(i<4 -> i<6).
+for (let i=0; i<6; i++){
   console.log(i);
 }
 
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
+// I had to change where i started from(i=0 -> i=3) and the number i was being checked with(i<4 -> i<6).
 for (let i=3; i<6; i++){
   console.log(i);
 }
@@ -27,6 +29,14 @@ for (let i=3; i<6; i++){
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+// I had to change (i=0 -> i=2) and (i<4 -> i<11).
+// Then I added an if statement that divides i by 2 and checks to see if remainder is = to 0.
+// Since all even numbers divided by 2 have a remainder of 0, only evens will print.
+for (let i=2; i<11; i++) {
+  if ((i % 2) === 0){
+    console.log(i);
+  }
+}
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
